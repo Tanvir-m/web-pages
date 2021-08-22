@@ -1,0 +1,25 @@
+$black: #000;
+$white: #fff;
+
+// mixins
+@mixin shadow($value1, $value2) {
+  box-shadow: 0 $value1 + px $value2 + px rgba(0, 0, 0, 0.16),
+    0 $value1 + px $value2 + px rgba(0, 0, 0, 0.23);
+}
+
+@mixin padding($top, $rig, $bot, $left) {
+  padding: $top + px $rig + px $bot + px $left + px;
+}
+
+@mixin w-h($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin border($unit, $color) {
+  border: $unit + px solid $color;
+}
+
+@mixin image($name) {
+  background-image: url('../../img/#{$name}');
+}

@@ -1,0 +1,119 @@
+@import '_variables.scss';
+
+.navbar {
+  background-color: $black;
+  color: $white;
+
+  .logo {
+    @include padding(15, 0, 20, 0);
+  }
+  .barIcon {
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 25px;
+    visibility: hidden;
+  }
+  ul {
+    @include padding(15, 0, 10, 0);
+
+    .link {
+      text-decoration: none;
+    }
+    li {
+      display: inline;
+      font-size: 20px;
+      @include padding(0, 0, 0, 50);
+      // font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      cursor: pointer;
+      color: $white;
+
+      button {
+        @include w-h(130px, 50px);
+        @include border(1, white);
+        background-color: transparent;
+        color: white;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: $white;
+          color: $black;
+          transition: 1s;
+        }
+      }
+    }
+  }
+}
+
+// responsive
+
+@media screen and (max-width: 1400px) {
+  .navbar {
+    ul {
+      @include padding(15, 0, 10, 0);
+      li {
+        display: inline;
+        font-size: 15px;
+        @include padding(0, 0, 0, 20);
+        // font-weight: bold;
+        button {
+          @include w-h(100px, 50px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    .barIcon {
+      font-size: 40px;
+      margin-top: 17px;
+      visibility: visible;
+      z-index: 100;
+    }
+    ul.ulList {
+      @include padding(15, 0, 10, 0);
+      display: none;
+      width: 100%;
+      li {
+        display: block;
+        font-size: 20px;
+        @include padding(15, 0, 15, 0);
+        text-align: center;
+
+        &:hover {
+          background-color: $white;
+          color: $black;
+        }
+      }
+    }
+    .signUp {
+      &:hover {
+        background-color: $black !important;
+      }
+    }
+  }
+
+  ul.ulListfalse {
+    width: 100%;
+    background-color: $black;
+    // position: absolute;
+    display: block;
+    li {
+      display: block;
+      font-size: 20px;
+      @include padding(15, 0, 15, 0);
+      text-align: center;
+      // font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+}

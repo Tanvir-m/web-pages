@@ -1,0 +1,132 @@
+@import '_variables.scss';
+
+.banner {
+  @include image('banner.jpg');
+  @include w-h(100%, 845px);
+  background-size: cover;
+  background-attachment: fixed;
+
+  .heading {
+    @include padding(250, 0, 0, 0);
+    h1 {
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 600;
+      color: $white;
+    }
+
+    h4 {
+      font-size: 40px;
+      padding-top: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: $white;
+    }
+
+    %btn {
+      @include w-h(210px, 60px);
+      margin-top: 30px;
+      background-color: $white;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button.one {
+      @include w-h(210px, 60px);
+      margin-top: 30px;
+      background-color: $white;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #000;
+      color: $white;
+      // font-weight: bold;
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+        transition: 1s;
+        border: none;
+        font-weight: normal;
+        @include shadow(5, 10);
+      }
+    }
+
+    button.two {
+      @include w-h(210px, 60px);
+      margin-top: 30px;
+      background-color: $white;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      .Playicon {
+        font-size: 35px;
+        margin-left: 10px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .banner {
+    .heading {
+      @include padding(250, 0, 0, 0);
+      h1 {
+        font-size: 60px;
+      }
+
+      h4 {
+        font-size: 30px;
+      }
+
+      button.one {
+        @include w-h(170px, 50px);
+        font-size: 17px;
+      }
+
+      button.two {
+        @include w-h(170px, 50px);
+        font-size: 17px;
+        .Playicon {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .banner {
+    .heading {
+      @include padding(250, 0, 0, 0);
+      h1 {
+        font-size: 50px;
+      }
+
+      h4 {
+        font-size: 25px;
+      }
+
+      button.one {
+        @include w-h(170px, 50px);
+        font-size: 17px;
+      }
+
+      button.two {
+        @include w-h(170px, 50px);
+        font-size: 17px;
+        .Playicon {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    @include w-h(100%, 645px);
+  }
+}

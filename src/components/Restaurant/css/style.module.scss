@@ -1,0 +1,60 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+
+
+@import "_weAre.scss";
+@import "_services.scss";
+@import "_variables.scss";
+@import "_footer.scss";
+@import "_navbar.scss";
+
+
+.ral{
+    font-family: 'Raleway', sans-serif;
+}
+.textGreen{
+    color: $green;
+}
+.padMar{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.countRow{
+    // background-color: $black;
+    // color: white;
+    // text-align: center;
+    // background-image: url("../img/sdjks.jpg");
+    background-image: url("../img/corn.jpg");
+    @include w-h(100%, 400px);
+    background-size: cover;
+    background-attachment: fixed;
+    // background-size: cover;
+}
+
+.counterIcons{
+    font-size: 100px;
+    margin-top: 25%;
+}
+
+.healthIcon{
+    font-size: 75px;
+    background-color: $green;
+    border-radius: 50%;
+    padding: 15%;
+    color: $white;
+}
+
+
+.shadow{
+    @include shadow(3,6)
+}
+
+.imgGl{
+    cursor: pointer;
+    &:hover{
+        transition-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+}
