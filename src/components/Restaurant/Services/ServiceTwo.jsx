@@ -1,4 +1,4 @@
-import { Col, Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import { GiFoodChain, GiFoodTruck, GiOpenedFoodCan } from 'react-icons/gi';
 import { SiIfood } from 'react-icons/si';
 import style from '../css/style.module.scss';

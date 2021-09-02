@@ -6,11 +6,11 @@ import style from '../css/style.module.scss';
 const CounterIcons = (props) => {
   const demo = (
     <>
-      <h2>
+      <h2 className={style.black}>
         <b>+</b>
         {props.heading}
       </h2>
-      <p>{props.para}</p>
+      <p className={style.black}>{props.para}</p>
     </>
   );
 

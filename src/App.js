@@ -1,6 +1,6 @@
 import './App.css';
 import Home from '../src/components/Restaurant/Home/Home';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import Travel from './components/Pages/Travel';
 
 function App() {
